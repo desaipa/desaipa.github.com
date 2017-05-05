@@ -1,4 +1,4 @@
-theme: jekyll-theme-Freelancer
+theme: jekyll-theme-freelancer
 defaults:
   - scope:
       path: "assets/img"
