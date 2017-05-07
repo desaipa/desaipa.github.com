@@ -36,11 +36,17 @@
 	<div id="locMap" style="width:250px;height:250px;float:right;margin-right:4%"></div>
 	<script>
 		function ccmMap() {
-			var ccmMapProp = {
-				center: new google.maps.LatLng(33.1865548, -96.7652215,19),
-				zoom: 5,
-			};
-			var map=new google.maps.Map(document.getElementById("locMap"), ccmMapProp);
+			var ccmloc = {lat: 33.186770, lng: -96.764776};
+			
+			var map = new google.maps.Map(document.getElementById('locMap'), {
+				zoom: 7,
+				center: ccmloc
+			});
+			
+			var marker = new google.maps.Marker({
+				position: ccmloc,
+				map: map
+			});
 		}
 	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPaQYp3FJnymb0ITKG1obSpReSzLuikFs&callback=ccmMap"></script>
