@@ -11,7 +11,7 @@
     <meta property="og:url" content="http://www.curiouscaterpillar.net/">
     <meta property="og:image" content="assets/img/ccm_logo.png" />
   </head>
-  <body>
+  <body style="padding-top:1%">
 	<div>
 		<table>
 			<tbody>
@@ -32,4 +32,17 @@
       Thank you for your interest in an affordable and high quality home-based Montessori school.  We are committed to providing a warm, safe and educational environment which will allow your child to thrive and reach his or her full potential.
     </div>
   </body>
+  <footer style="padding-top:1%">
+	<div id="locMap" style="width:250px;height:250px;float:right;margin-right:4%"></div>
+	<script>
+		function ccmMap() {
+			var ccmMapProp = {
+				center: new google.maps.LatLng(33.1865548, -96.7652215,19),
+				zoom: 5,
+			};
+			var map=new google.maps.Map(document.getElementById("locMap"), ccmMapProp);
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPaQYp3FJnymb0ITKG1obSpReSzLuikFs&callback=ccmMap"></script>
+  </footer>
 </html>
