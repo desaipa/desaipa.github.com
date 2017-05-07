@@ -33,13 +33,16 @@
     </div>
   </body>
   <footer style="padding-top:1%">
+	<div id="contactInfo" style="width:250px;height:250px;float:left;margin-left:4%">
+		<b>Curious Caterpillar Montessori</b><br />10812 Irene Drive,<br />McKinney, TX 75070<br /><a href="tel:1-469-712-4510">1-469-712-4510</a> 
+	</div>
 	<div id="locMap" style="width:250px;height:250px;float:right;margin-right:4%"></div>
 	<script>
 		function ccmMap() {
 			var ccmloc = {lat: 33.186770, lng: -96.764776};
 			
 			var map = new google.maps.Map(document.getElementById('locMap'), {
-				zoom: 7,
+				zoom: 12,
 				center: ccmloc
 			});
 			
