@@ -2,15 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<head>
 		<title>Curious Caterpillar Montessori</title>
-		<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="assets/images/favicon.ico" />
-		<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+		<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../images/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
 		<meta name="description" content="Official site for Curious Caterpillar Montessori" />
 		<meta name="keyword" content="school, montessori, curious caterpillar, curious caterpillar montessori, caterpillar, curious, home based montessori" />
 		<meta property="og:title" content="Curious Caterpillar Montessori" />
 		<meta property="og:site_name" content="Curious Caterpillar Montessori">
 		<meta property="og:url" content="http://www.curiouscaterpillar.net/">
-		<meta property="og:image" content="assets/images/ccm_logo.png" />
-		<link href="assets/styles/styles.css" rel="stylesheet" type="text/css" >
+		<meta property="og:image" content="../images/ccm_logo.png" />
+		<link href="../styles/styles.css" rel="stylesheet" type="text/css" >
 	</head>
 	<body>
 		<div class="content">
@@ -19,7 +19,7 @@
 					<tbody>
 						<tr>
 							<td>
-								<img alt="Curious Caterpillar Montessori" src="assets/images/ccm_logo.png" style="height:150px; float:left">
+								<img alt="Curious Caterpillar Montessori" src="../images/ccm_logo.png" style="height:150px; float:left">
 							</td>
 							<td style="align-content: center;width: 80%;">
 								<h1 style="text-align:center">Curious Caterpillar Montessori</h1>
@@ -31,18 +31,33 @@
 			</div>
 			<div class="menuwrapper" id="menuwrapper">
 				<ul class="menubar" id="menubar">
-					<li><a title="Curious Caterpillar Montessori Home"  href="index.html">Home</a></li>
-					<li><a title="Contact Us" href="assets/includes/contact.html">Contact Us</a>
+					<li><a title="Curious Caterpillar Montessori Home"  href="../../index.html">Home</a></li>
+					<li><a title="Contact Us" href="contact.html">Contact Us</a>
 				</ul>
 				<br class="clear" >
 			</div>
 			<div class="mainBody">
-				<h2>Welcome!!!</h2>
-				<div>
-				  Thank you for your interest in an affordable and high quality home-based Montessori school.  We are committed to providing a warm, safe and educational environment which will allow your child to thrive and reach his or her full potential.
+				<div id="contactInfo" style="width:250px;height:250px;float:left;margin-left:4%">
+					<b>Curious Caterpillar Montessori</b><br />10812 Irene Drive,<br />McKinney, TX 75070<br /><a href="tel:1-469-712-4510">1-469-712-4510</a> 
 				</div>
+				<div id="locMap" style="width:250px;height:250px;float:right;margin-right:4%"></div>
+				<script>
+					function ccmMap() {
+						var ccmloc = {lat: 33.186770, lng: -96.764776};
+						
+						var map = new google.maps.Map(document.getElementById('locMap'), {
+							zoom: 14,
+							center: ccmloc
+						});
+						
+						var marker = new google.maps.Marker({
+							position: ccmloc,
+							map: map
+						});
+					}
+				</script>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPaQYp3FJnymb0ITKG1obSpReSzLuikFs&callback=ccmMap"></script>
 			</div>
-			<center><img alt="Under Construction" src="assets/images/under_construction.jpg" style="margin:2%;"></center>
 			<div style="clear:both"></div>
 			<div class="footer">
 				<p>Copyright &copy; 2017 Curious Caterpillar Montessori, Registered In Texas, USA. All Rights Reserved.</p>
