@@ -23,6 +23,16 @@ a {
     overflow: auto;
 }
 
+.headerLogo {
+	height:55%; 
+	float:left;
+}
+
+.headerTitle {
+	width: 81%;
+	padding-bottom: 2%
+}
+
 .content {
     background-color: #f3fcc9;
     /*border: 1px solid #b7b7b7;*/
