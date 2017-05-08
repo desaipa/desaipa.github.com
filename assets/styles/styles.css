@@ -20,10 +20,16 @@ body {
     overflow: auto;
 }
 
+.content {
+    background-color: #f3fcc9;
+    /*border: 1px solid #b7b7b7;*/
+    border-width: 5px;
+    border-color: #54c413;
+}
+
 .menuwrapper {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #333;
-    background-color: #C0C0C0;
+    border: 1px solid #a8a80a;
+    background-color: #e8f9b6;
 }
 
 .menubar, .menubar ul {
@@ -43,7 +49,7 @@ body {
 
 .menubar li:hover a, .menubar a:focus, .menubar a:active {
     color: #000000;
-    background-color: #CCCCCC;
+    background-color: #fcb450;
     font-weight: normal;
 }
 
@@ -51,26 +57,11 @@ body {
     display: block;
     text-decoration: none;
     padding: 5px 10px 5px 10px;
-    border-right: 1px solid #333;
+    border-right: 1px solid #a8a80a;
     font-size: .95em;
     color: #0000FF;
     background-color: transparent;
 	text-align: center;
-}
-
-.content {
-    background-color: lightblue;
-    width: 80%;
-    margin: 0 auto;
-    border-top: 0;
-    border-right: 1px solid #b7b7b7;
-    border-bottom: 0;
-    border-left: 1px solid #b7b7b7;
-    border-width: 0 10px 0 5px;
-    border-top-color: inherit;
-    border-right-color: #05C1B0;
-    border-bottom-color: inherit;
-    border-left-color: #05C1B0;
 }
 
 .mainBody  {
@@ -100,7 +91,7 @@ body {
 .footer {
     width: 100%;
     text-align: center;
-    background-color: #113962;
+    background-color: #c2d66b;
     padding-top: 5px;
     padding-bottom: 5px;
     clear: both;
