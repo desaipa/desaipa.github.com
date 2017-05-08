@@ -8,6 +8,9 @@ body {
 	clear: both;
 }
 
+a {
+    color: #7c893b;
+}
 .header {
     background-color: #E6F3FB;
     width: 100%;
@@ -59,7 +62,6 @@ body {
     padding: 5px 10px 5px 10px;
     border-right: 1px solid #a8a80a;
     font-size: .95em;
-    color: #0000FF;
     background-color: transparent;
 	text-align: center;
 }
