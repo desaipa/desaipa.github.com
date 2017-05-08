@@ -37,12 +37,28 @@
 				<br class="clear" >
 			</div>
 			<div class="mainBody">
-				<h2>Welcome!!!</h2>
-				<div>
-				  Thank you for your interest in an affordable and high quality home-based Montessori school.  We are committed to providing a warm, safe and educational environment which will allow your child to thrive and reach his or her full potential.
+				<h2>Contact Us</h2>
+				<div id="contactInfo" class="contactInfo">
+					<b>Curious Caterpillar Montessori</b><br />10812 Irene Drive,<br />McKinney, TX 75070<br /><a href="tel:1-469-712-4510">1-469-712-4510</a> 
 				</div>
+				<div id="locMap"></div>
+				<script>
+					function ccmMap() {
+						var ccmloc = {lat: 33.186770, lng: -96.764776};
+						
+						var map = new google.maps.Map(document.getElementById('locMap'), {
+							zoom: 14,
+							center: ccmloc
+						});
+						
+						var marker = new google.maps.Marker({
+							position: ccmloc,
+							map: map
+						});
+					}
+				</script>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg7X4aAmynAd-_PYk9thmJRWKc_WExIb0&callback=ccmMap"></script>
 			</div>
-			<center><img alt="Under Construction" src="assets/images/under_construction.jpg" style="margin:2%;"></center>
 			<div style="clear:both"></div>
 			<div class="footer">
 				<p>Copyright &copy; 2017 Curious Caterpillar Montessori, Registered In Texas, USA. All Rights Reserved.</p>
