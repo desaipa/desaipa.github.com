@@ -108,6 +108,8 @@ a {
     padding-bottom: 5px;
     clear: both;
     overflow: auto;
+	position: fixed;
+	bottom: 0;
 }
 
 .footer p {
